@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <!-- Style link -->
+  <link rel="stylesheet" href="CSS FOLDER/signup.css">
+  <title>Clothing | Create Account</title>
+</head>
+<body>
+
+  <img src="img/loader.gif" class="loader">
+
+  <div class="alert-box">
+    <img src="img/error.png" class="alert-img">
+    <p class="alert-msg">Error Message</p>
+  </div>
+
+  <div class="container">
+    <img src="img/dark-logo.png" class="logo">
+    <div>
+      <input type="text" autocomplete="off" id="name" placeholder="Enter Your Name">
+      <input type="email" autocomplete="off" id="email" placeholder="Enter Your Email">
+      <input type="password" autocomplete="off" id="password" placeholder="Password">
+      <input type="text" autocomplete="off" id="number" placeholder="Phone Number">
+      <input type="checkbox" class="checkbox" id="terms-and-cond" checked>
+      <label for="terms-and-cond">Agree To Our <a href="">Terms And Condaitions</a></label>
+      <br>
+      <input type="checkbox" class="checkbox" id="notification">
+      <label for="notification">Recive Upcoming Offers And Events Mails</label>
+      <button class="submit-btn">Create Account</button>
+    </div>
+    <a href="/login" class="link">Already Have An Account? log In Here</a>
+  </div>
+
+  <script src="js/form.js"></script>
+  <script src="js/token.js"></script>
+
+</body>
+</html>

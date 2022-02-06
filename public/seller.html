@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS FOLDER/signup.css" />
+    <link rel="stylesheet" href="CSS FOLDER/seller.css" />
+    <title>Seller Dashboard</title>
+  </head>
+  <body>
+    <img src="img/loader.gif" class="loader" />
+
+    <div class="alert-box">
+      <img src="img/error.png" class="alert-img" />
+      <p class="alert-msg">Error Message</p>
+    </div>
+
+    <img src="img/dark-logo.png" class="logo" />
+
+    <!-- become seller elment -->
+    <div class="become-seller hide">
+      <p class="heading">Become A Seller</p>
+      <p class="des">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae corporis
+        optio ipsum excepturi. Animi inventore nihil aperiam molestias voluptate
+        dolor tempore soluta rerum, voluptatum itaque asperiores velit possimus
+        tenetur repellendus consequuntur eum ea, error aliquam vero! Asperiores
+        praesentium itaque sequi iusto nihil. A, quibusdam illum quidem nesciunt
+        quod sed sunt itaque non dignissimos cum nostrum sapiente quasi,
+        voluptate nihil tempore tenetur officiis? Earum iste corrupti laudantium
+        explicabo sunt eligendi porro fugit odit assumenda optio modi sint
+        praesentium, minus.
+      </p>
+      <button class="btn" id="apply-btn">Apply For Seller Account</button>
+    </div>
+
+    <!-- apply form -->
+    <div class="apply-form hide">
+      <input
+        type="text"
+        id="business-name"
+        placeholder="Business Name / Company Name / Shop Name"
+      />
+      <textarea id="business-add" placeholder="Address"></textarea>
+      <textarea id="about" placeholder="About"></textarea>
+      <input type="text" id="number" placeholder="Phone Number" />
+      <input type="checkbox" class="checkbox" id="terms-and-cond" checked />
+      <label for="terms-and-cond"
+        >Agree To Our <a href="">Terms And Condaitions</a></label
+      >
+      <br />
+      <input type="checkbox" class="checkbox" id="legitInfo" checked />
+      <label for="legitInfo">All Information Is Legit</label>
+      <button class="submit-btn" id="apply-from-btn">Apply</button>
+    </div>
+
+    <!-- product list -->
+    <div class="product-listing hide">
+      <div class="add-product">
+        <p class="add-product-title">Add Product</p>
+        <a href="addProduct.html" class="btn">Add Product</a>
+      </div>
+      <img src="img/no-products.png" class="no-product-img" />
+    </div>
+
+    <script src="js/seller.js"></script>
+    <script src="js/token.js"></script>
+  </body>
+</html>
